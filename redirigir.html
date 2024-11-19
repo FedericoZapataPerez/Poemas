@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirección Aleatoria</title>
+    <script type="text/javascript">
+        // Lista de enlaces de Google Drive
+        var enlaces = [
+            "https://drive.google.com/file/d/1gae0whDHgI_RFMEolom-gU4EK9P9Zwdy/view?usp=drive_link", // Enlace del archivo 1
+            "https://drive.google.com/file/d/1--SUbD39uQx-ypg8kA2nDZsLQNz3zexn/view?usp=drive_link", // Enlace del archivo 2
+            "https://drive.google.com/file/d/1JZqzX9Kju5qosNn55iwFaLWOg-5KWnbr/view?usp=drive_link"  // Enlace del archivo 3
+        ];
+
+        // Seleccionamos un enlace aleatorio
+        var enlaceAleatorio = enlaces[Math.floor(Math.random() * enlaces.length)];
+
+        // Redirigimos a ese enlace
+        window.location.href = enlaceAleatorio;
+    </script>
+</head>
+<body>
+    <p>Redirigiendo... Si no eres redirigido automáticamente, <a href="#">haz clic aquí</a>.</p>
+</body>
+</html>
